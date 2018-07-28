@@ -13,3 +13,18 @@ public		+	+	+		+
 private		+	-	-		-
 protected	+	+	+		-
 '' (empty)	+	+ 	-		-
+
+static > statyczny w kontekscie calej aplikacji i wspolne.
+jak bedzie w klasie to obiekty beda mialy te sama wartosc. i potem modyfikacja na jednym obiekcie bedzie zmieniac na wszystkich innych. statica mozna zmienic ogolnie i sie zmieni dla wszystkich
+
+final > stale ostateczne, zmienic nie mozna. 
+
+STATIC I FINAL konwencja wielkie litery
+
+
+mutable > obiekt sie zmienia (jak masz zwykly setter this.a = a to jest mutable)
+immutable > obiekt sie nie zmienia w czasie (setter bedzie tworzyc nowy obiekt i ma return new costakiego - ale nie modyfikuje this)
+
+TABLICE
+ma rozmiar, jak zainicjujesz z jakims rozmiarem zawsze bedzie taki miec
+

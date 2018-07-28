@@ -6,7 +6,7 @@ public class UczenApp {
 
         uczen1.setSchoolClass("Infoshare Java DevQA");
         uczen1.setOceny("5+");
-        
+
         System.out.println(uczen1);
     }
 }
