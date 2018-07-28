@@ -1,0 +1,15 @@
+DOM - document object model
+lacznik miedzy html a javascript
+
+https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+
+w chrome tools >> console > yellow to jakies ostrzezenia samej przegladarki, sprawdza standardy
+
+wtf javascript
+
+$('selector') > w js to pozwala uzyc danego selectora
+
+$('#q').value = 'jakas wartosc'
+
+$('#id').click()
+itp

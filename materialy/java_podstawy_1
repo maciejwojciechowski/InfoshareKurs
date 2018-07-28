@@ -1,0 +1,15 @@
+JAVA
+do primitive type sa wrappery jak:
+int > Integer
+Double,
+Long, 
+itp
+
+dzieki temu wystawiane sa rozne metody dla tych objektow.
+
+
+		Klasa 	Pakiet	Dziedziczenie	World
+public		+	+	+		+
+private		+	-	-		-
+protected	+	+	+		-
+'' (empty)	+	+ 	-		-

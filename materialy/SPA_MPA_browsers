@@ -1,0 +1,15 @@
+Local storage:
+1. objects, vars etc all that is needed for application to run
+this sits in the browser
+this is connected to your browser, so client side.
+
+
+coockies:
+similar to storage, some variables etc however, coockie is sent to server with every request so can't be too big
+also some relation to domain, 
+this is strongly connected to server side:
+https://stackoverflow.com/questions/3220660/local-storage-vs-cookies
+
+
+cache:
+files, http requests

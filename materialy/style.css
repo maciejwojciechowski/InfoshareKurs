@@ -1,0 +1,32 @@
+.primary {
+  background-color: green;
+}
+
+#element{
+  color: pink;
+}
+
+* {
+  font-family: 'Arial';
+}
+
+header p {
+  font-size: 18px;
+  color: blue;
+}
+
+li:nth-child(3n+4) {  
+  opacity: 0.5;
+ }
+
+li:not([data-value="3"]){
+  font-weight: bold;
+}
+
+li:nth-child(even).primary{
+  text-decoration: underline;
+}
+
+li.secondary+li{
+  font-size: 20px;
+}

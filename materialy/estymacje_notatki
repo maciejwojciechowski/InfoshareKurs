@@ -1,0 +1,15 @@
+# WBS work break system, dzielisz na mniejsze elementy
+
+# PERT
+sciezka pesymistyczne, optymisticzna, i najbardziej prawdopodobna
+i robisz z tego srednia wazona
+result = (pesimistic + 4prawdopodobna + optymistyczna)/6
+
+#Delphi
+zbierasz specow, dzielisz na taski i oni robia estymacje. potem brain-storm i jest dyskusja
+po tem jest kolejna iteracja estymacji i tak az do ustalenia 
+
+#na postawie dostwiadczenia
+
+# planning poker, nie estymuje sie w MD tylko trudnosc/wage zadania. jak bardzo jest skomplikowane
+jak to przelozyc na czas - 

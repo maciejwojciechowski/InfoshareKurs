@@ -6,6 +6,14 @@ public class Szafa {
     private Integer iloscPolek;
     private String material;
 
+    public Szafa(Integer szerokosc, Integer wysokosc, Integer glebokosc, Integer iloscPolek, String material) {
+        this.szerokosc = szerokosc;
+        this.wysokosc = wysokosc;
+        this.glebokosc = glebokosc;
+        this.iloscPolek = iloscPolek;
+        this.material = material;
+    }
+
     public Integer getGlebokosc() {
         return glebokosc;
     }
