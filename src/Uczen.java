@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+
 public class Uczen {
 
     private String name;
     private String surname;
     private String schoolClass;
-    private String oceny;
+    private ArrayList<Integer> oceny = new ArrayList<Integer>(0);
 
     public Uczen(String name, String surname){
         this.name = name;
@@ -14,6 +16,14 @@ public class Uczen {
         this.name = name;
         this.surname = surname;
         this.schoolClass = schoolClass;
+    }
+
+    public void setOceny(Integer oceny) {
+        this.oceny.add(oceny);
+    }
+
+    public ArrayList<Integer> getOceny() {
+        return oceny;
     }
 
     public String getName() {
@@ -32,12 +42,44 @@ public class Uczen {
         this.schoolClass = schoolClass;
     }
 
-    public String getOceny() {
-        return oceny;
+    public Integer najnizszaOcena(){
+
+        int smallest = oceny.get(0);
+        for(int x : oceny ){
+            if (x < smallest) {
+                smallest = x;
+            }
+        }
+        return smallest;
     }
 
-    public void setOceny(String oceny) {
-        this.oceny = oceny;
+    public Integer najwyzszaOcena(){
+
+        int highest = oceny.get(0);
+        for(int x : oceny ){
+            if (x > highest) {
+                highest = x;
+            }
+        }
+        return highest;
+    }
+
+    public Double sredniaOcen(){
+        if (oceny.size() > 0) {
+            Double srednia = 0.0;
+            for (int x : oceny) {
+                srednia += x;
+            }
+            return srednia / oceny.size();
+        }else {
+            return 0.0;
+        }
+    }
+
+    public void ustawOceny(Integer[] oceny){
+        for(Integer i:oceny){
+            this.setOceny(i);
+        }
     }
 
     @Override
@@ -46,7 +88,7 @@ public class Uczen {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", schoolClass='" + schoolClass + '\'' +
-                ", oceny='" + oceny + '\'' +
+                ", oceny=" + oceny +
                 '}';
     }
 }

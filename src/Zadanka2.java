@@ -7,10 +7,13 @@ public class Zadanka2 {
         //popros o date urodzin i podaj pore roku
 
         Scanner scanInput = new Scanner(System.in);
-        System.out.println("Podaj miesiac urodzin: ");
+        System.out.println("Napisz cos");
         String a = scanInput.nextLine();
 
-        jakaPora(a);
+        //jakaPora(a);
+
+
+        System.out.println(liczSamogloski(a));
     }
 
     public static void jakaPora(String miesiac) {
@@ -41,5 +44,25 @@ public class Zadanka2 {
                 break;
         }
     }
+
+    public static int liczSamogloski(String str){
+        Integer licznik = 0;
+        char[] znaki = str.toLowerCase().toCharArray();
+
+        for(char znak:znaki) {
+            switch (znak){
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'y':
+                    licznik++;
+                    break;
+            }
+
+        }
+        return licznik;
+        }
 
 }
